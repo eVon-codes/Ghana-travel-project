@@ -138,11 +138,18 @@ footer a {
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
+.card-header.grid {
+  grid-gap: 0;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+  height: 180px;
+}
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
-  height: 410px;
-  object-fit: cover;
+  height: 180px;
 }
 
 section {
@@ -196,7 +203,7 @@ main p {
   color: #272044;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
@@ -215,5 +222,11 @@ main p {
   }
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
